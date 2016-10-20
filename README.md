@@ -14,7 +14,7 @@ Easily create a static website using the [Cosmic JS CMS API](https://cosmicjs.co
 You get the best of all worlds:
 
 1. An easy way to edit content from the Cosmic JS Dashboard.
-2. A flexible API to store and fetch content that can be delivered to any device are application regardless of programming language.
+2. A flexible API to store and fetch content that can be delivered to any device or application regardless of programming language.
 3. A light-weight, static website that loads fast and allows you to also contribute Markdown pages.
 
 ###Getting Started
