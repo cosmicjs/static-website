@@ -1,8 +1,8 @@
 # Static Site
 
-###An API-First Static Website
-
 [View Demo](http://static-site.cosmicapp.co)
+
+###An API-First Static Website
 
 Easily create a static website using the [Cosmic JS CMS API](https://cosmicjs.com). The build process fetches content from the Cosmic JS API, then builds the static HTML files.  [Metalsmith](http://www.metalsmith.io/) is also thrown in, in case you would like to use markdown to edit your content for certain pages.
 
