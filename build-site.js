@@ -7,18 +7,17 @@ var Cosmic = require('cosmicjs');
 var async = require('async');
 var mkdirp = require('mkdirp');
 var del = require('del');
+var mv = require('mv');
 var createPage = require('./create-page');
 module.exports = function() {
   async.series([
     // Clean
-    function(cleanCallback) {
-      del([__dirname + '/build']).then(paths => {
-        mkdirp(__dirname + '/build', function (err) {
-          cleanCallback();
-        });
+    function(callback) {
+      mkdirp(__dirname + '/build-new', function (err) {
+        callback();
       });
     },
-    function() {
+    function(callback) {
       Cosmic.getObjects({ bucket: { slug: 'static-site' }}, function(err, res) {
         var objects = res.objects.all;
         var pages = res.objects.type.pages;
@@ -35,7 +34,7 @@ module.exports = function() {
           // Create markdown static pages
           Metalsmith(__dirname)
             .source('./src')
-            .destination('./build')
+            .destination('./build-new')
             .clean(false)
             .use(sass({
               outputDir: 'css/',
@@ -49,8 +48,24 @@ module.exports = function() {
             }))
             .build(function(err, files) {
               if (err) { throw err; }
+              callback();
             });
         });
+      });
+    },
+    function(callback) {
+      del([__dirname + '/build']).then(paths => {
+        callback();
+      });
+    },
+    function(callback) {
+      mv(__dirname + '/build-new', __dirname + '/build', { mkdirp: true }, function(err) {
+        callback();
+      });
+    },
+    function(callback) {
+      del([__dirname + '/build-new']).then(paths => {
+        // done
       });
     }
   ]);

@@ -24,15 +24,15 @@ module.exports = function(args, done) {
       var markup = locals.template({ page, pages, cosmic, year });
       // If Home page found
       if (page.slug === 'home') {
-        fs.writeFile(__dirname + '/build/index.html', markup, function(err) {
+        fs.writeFile(__dirname + '/build-new/index.html', markup, function(err) {
           if(err) {
             return console.log(err);
           }
           done();
         });
       } else {
-        mkdirp(__dirname + '/build/' + page.slug, function (err) {
-          fs.writeFile(__dirname + '/build/' + page.slug + '/index.html', markup, function(err) {
+        mkdirp(__dirname + '/build-new/' + page.slug, function (err) {
+          fs.writeFile(__dirname + '/build-new/' + page.slug + '/index.html', markup, function(err) {
             if(err) {
               return console.log(err);
             }
