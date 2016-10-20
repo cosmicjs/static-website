@@ -41,7 +41,11 @@ You can easily manage the content in this static site on Cosmic JS.  Follow thes
 Now you can edit your content and rebuild your static site on-the-fly by accessing `http://your-bucket-slug.cosmicapp.co/rebuild-site`.  
 
 ###Webhooks
-If you would like to rebuild your site after every content edit, this is made easy with Webhooks.  To set up your webhooks:
+If you would like to rebuild your site after every content edit, this is made easy with Webhooks.
+
+[Click here for a tutorial on how to set up Webhooks](https://cosmicjs.com/blog/adding-webhooks-in-4-steps).
+
+To set up your Webhooks:
 
 1. Go to Your Bucket > Webhooks and add the Webhooks product to your bucket.
 2. Add a Webhook that is triggered when an object is published.
