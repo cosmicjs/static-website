@@ -35,7 +35,7 @@ Your static site will now be serving static files from `/build` at http://localh
 Rebuild the website at any time by accessing `http://localhost:3000/rebuild-site`
 
 ###Add / Edit Content
-You can easily manage the content in this static site on Cosmic JS.  Follow these steps:
+You can easily manage the content in your static site on Cosmic JS.  Follow these steps:
 
 1. [Log in to Cosmic JS](https://cosmicjs.com).
 2. Create a bucket.
