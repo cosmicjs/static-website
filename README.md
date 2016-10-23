@@ -1,6 +1,6 @@
 # Static Site
 
-[View Demo](http://static-site.cosmicapp.co)
+[View Demo](http://static-website.cosmicapp.co)
 
 ###An API-First Static Website
 Easily create a static website using the [Cosmic JS CMS API](https://cosmicjs.com). 
@@ -21,8 +21,8 @@ You get the best of all worlds:
 ####Install
 Make sure you have yarn installed.  Why?  Because it's new, we love new, and it's faster than `npm install`.
 ```
-git clone https://github.com/tonyspiro/static-site
-cd static-site
+git clone https://github.com/tonyspiro/static-website
+cd static-website
 yarn
 ```
 ####Start Server
