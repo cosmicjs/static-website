@@ -9,6 +9,7 @@ var mkdirp = require('mkdirp')
 var del = require('del')
 var mv = require('mv')
 var createPage = require('./create-page')
+var config = require('./config')
 module.exports = () => {
   async.series([
     // Create build-new folder
@@ -18,7 +19,7 @@ module.exports = () => {
       })
     },
     callback => {
-      Cosmic.getObjects({ bucket: { slug: 'static-site' }}, (err, res) => {
+      Cosmic.getObjects(config.cosmicjs, (err, res) => {
         var objects = res.objects.all
         var pages = res.objects.type.pages
         var cosmic = res
