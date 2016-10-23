@@ -20,7 +20,6 @@ module.exports = () => {
     },
     callback => {
       Cosmic.getObjects(config.cosmicjs, (err, res) => {
-        var objects = res.objects.all
         var pages = res.objects.type.pages
         var cosmic = res
         // Create dynamic static pages

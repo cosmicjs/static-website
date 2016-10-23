@@ -20,7 +20,7 @@ module.exports = (args, done) => {
     },
     () => {
       // Set variables
-      var year = (new Date()).getFullYear()
+      var year = (new Date()).getFullYear() // make your footer year dynamic ;) 
       var markup = locals.template({ page, pages, cosmic, year })
       // If Home page found
       if (page.slug === 'home') {
