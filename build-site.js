@@ -33,7 +33,12 @@ module.exports = () => {
           createPage(args, callbackEach)
         }, () => {
           // Create markdown static pages
+          var year = (new Date()).getFullYear() // make your footer year dynamic ;) 
           Metalsmith(__dirname)
+            .metadata({
+              cosmic: cosmic,
+              year: year
+            })
             .source('./src')
             .destination('./build-new')
             .clean(false)
@@ -46,7 +51,8 @@ module.exports = () => {
             .use(metalsmithPrism())
             .use(permalinks())
             .use(layouts({
-              engine: 'handlebars'
+              engine: 'handlebars',
+              partials: 'layouts/partials'
             }))
             .build((err, files) => {
               if (err) { throw err }

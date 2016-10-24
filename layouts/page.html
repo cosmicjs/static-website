@@ -1,61 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ page.title }} | Cosmic JS Static Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="/css/css-helpers.css" rel="stylesheet">
-  <link href="/css/font-awesome.css" rel="stylesheet">
-  <link href="/css/pushy.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
-</head>
-<body>
-  <header id="header">
-    <nav class="navbar navbar-inverse">
-      <div>
-        <a class="navbar-brand pull-left" href="/">{{ cosmic.object.header.metafield.site_title.value }}</a>
-        <div class="pull-right menu-btn">&#9776; Menu</div>
-      </div><!-- /.container-fluid -->
-    </nav>
-  </header>
-  <!-- Pushy Menu -->
-  <nav class="pushy pushy-right text-center">
-    <ul>
-      <li class="pushy-link">
-        <a class="menu-close" href="#">&times;</a>
-      </li>
-      {{# cosmic.object.header.metafield.nav_links.children }}
-        {{# children }}
-          <li><a href="{{ value }}">{{ title }}</a></li>
-        {{/ children }}
-      {{/ cosmic.object.header.metafield.nav_links.children }}
-    </ul>
-    <div class="mb-20 ml-10">
-      {{# cosmic.object.footer.metafield.github.value }}
-        <a class="mr-10" href="{{ . }}" target="_blank">
-          <i class="fa fa-github social-icon"></i>
-        </a>
-      {{/ cosmic.object.footer.metafield.github.value }}
-      {{# cosmic.object.footer.metafield.twitter.value }}
-        <a class="mr-10" href="{{ . }}" target="_blank">
-          <i class="fa fa-twitter social-icon"></i>
-        </a>
-      {{/ cosmic.object.footer.metafield.twitter.value }}
-    </div>
-  </nav>
-  <div class="site-overlay"></div>
+{{> header }}
   <main id="main">
     <div class="page-hero" style="background-image: url('{{ page.metafield.hero.imgix_url }}');">
       <div class="overlay"></div>
       <div class="page-title text-center">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ title }}</h1>
       </div>
     </div>
     <div class="page-content container">
@@ -65,43 +13,4 @@
       </div>
     </div>
   </main>
-  <footer id="footer" class="footer invisible">
-    <div class="container mt-20 pb-60 pt-20">
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="mb-30">
-            <a href="https://cosmicjs.com" target="_blank">
-              <img class="pull-left mr-15 relative" src="https://cosmicjs.com/images/logo.svg" width="28" height="28">
-              <span class="powered-by">Proudly powered by Cosmic JS</span>
-            </a>
-          </div>
-          <div class="mb-20">
-            &copy; {{ year }} {{ cosmic.object.footer.metafield.company_title.value }}
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="mb-20">
-            {{# cosmic.object.footer.metafield.github.value }}
-              <a class="mr-10" href="{{ . }}" target="_blank">
-                <i class="fa fa-github social-icon"></i>
-              </a>
-            {{/ cosmic.object.footer.metafield.github.value }}
-            {{# cosmic.object.footer.metafield.twitter.value }}
-              <a class="mr-10" href="{{ . }}" target="_blank">
-                <i class="fa fa-twitter social-icon"></i>
-              </a>
-            {{/ cosmic.object.footer.metafield.twitter.value }}
-          </div>
-          <div>
-            {{# cosmic.object.footer.metafield.lorem_ipsum.value }}
-              {{{ . }}}
-            {{/ cosmic.object.footer.metafield.lorem_ipsum.value }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="/js/pushy.min.js"></script>
-  <script src="/js/main.js"></script>
-</body>
-</html>
+{{> footer }}

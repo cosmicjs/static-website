@@ -8,6 +8,25 @@ module.exports = (args, done) => {
   var cosmic = args.cosmic
   var locals = {}
   async.series([
+    // Register partials
+    callback => {
+      fs.readFile(__dirname + '/layouts/partials/header.html', 'utf8', (err, data) => {
+        if (err) {
+          return console.log(err)
+        }
+        Handlebars.registerPartial('header', data)
+        callback()
+      })
+    },
+    callback => {
+      fs.readFile(__dirname + '/layouts/partials/footer.html', 'utf8', (err, data) => {
+        if (err) {
+          return console.log(err)
+        }
+        Handlebars.registerPartial('footer', data)
+        callback()
+      })
+    },
     callback => {
       fs.readFile(__dirname + '/layouts/page.html', 'utf8', (err, data) => {
         if (err) {
@@ -21,7 +40,8 @@ module.exports = (args, done) => {
     () => {
       // Set variables
       var year = (new Date()).getFullYear() // make your footer year dynamic ;) 
-      var markup = locals.template({ page, pages, cosmic, year })
+      var title = page.title
+      var markup = locals.template({ page, pages, cosmic, year, title })
       // If Home page found
       if (page.slug === 'home') {
         fs.writeFile(__dirname + '/build-new/index.html', markup, err => {

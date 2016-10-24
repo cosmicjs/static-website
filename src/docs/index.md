@@ -3,7 +3,6 @@ title: Documentation
 date: 2016-10-25
 layout: markdown.html
 ---
-
 This is some documentation powered by Markdown.
 
 Here's a block of code:
