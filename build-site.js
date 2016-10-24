@@ -3,6 +3,7 @@ var markdown = require('metalsmith-markdown')
 var layouts = require('metalsmith-layouts')
 var permalinks = require('metalsmith-permalinks')
 var sass = require('metalsmith-sass')
+var metalsmithPrism = require('metalsmith-prism');
 var Cosmic = require('cosmicjs')
 var async = require('async')
 var mkdirp = require('mkdirp')
@@ -41,7 +42,8 @@ module.exports = () => {
               sourceMap: true,
               sourceMapContents: true
             }))
-            .use(markdown())
+            .use(markdown( { langPrefix: 'language-' } ))
+            .use(metalsmithPrism())
             .use(permalinks())
             .use(layouts({
               engine: 'handlebars'

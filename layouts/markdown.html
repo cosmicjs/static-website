@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }} | Cosmic JS Static Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="/css/css-helpers.css" rel="stylesheet">
+  <link href="/css/font-awesome.css" rel="stylesheet">
+  <link href="/css/pushy.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+  <main id="main">
+    <div class="container pt-20">
+      <a href="/" class="btn btn-default"><< Home</a>
+      <h1>{{ title }}</h1>
+      <div class="page-content">
+        <div class="content">
+          {{{ contents }}}
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/js/pushy.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
