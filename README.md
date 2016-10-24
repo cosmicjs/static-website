@@ -3,9 +3,9 @@
 [View Demo](http://static-website.cosmicapp.co)
 
 ###An API-First Static Website
-Easily create a static website using the [Cosmic JS CMS API](https://cosmicjs.com).  You get the best of all worlds:
+You get the best of all worlds:
 
-1. The flexibility to manage content from the Cosmic JS API
+1. The flexibility to manage content from the [Cosmic JS CMS API](https://cosmicjs.com)
 2. The speed of static HTML
 3. The option to use Markdown files
 
