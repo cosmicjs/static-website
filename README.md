@@ -9,9 +9,6 @@ Easily create a static website using the [Cosmic JS CMS API](https://cosmicjs.co
 2. The speed of static HTML
 3. The option to use Markdown files
 
-2. A flexible API to store and fetch content that can be delivered to any device or application regardless of programming language.
-3. A light-weight, static website that loads fast and allows you to also contribute Markdown pages.
-
 ###How it Works
 
 1. The build process fetches content from the Cosmic JS API, then builds the static HTML files.
