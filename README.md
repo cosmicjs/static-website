@@ -1,5 +1,5 @@
 # Static Site
-
+![HTML](https://cosmicjs.com/uploads/01c0c800-9a3e-11e6-8103-8117827beac1-html.jpg)
 [View Demo](http://static-website.cosmicapp.co)
 
 ###An API-First Static Website
