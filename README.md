@@ -5,15 +5,15 @@
 ###API-First Static Website
 You get the best of all worlds:
 
-1. The flexibility to manage content from the [Cosmic JS CMS API](https://cosmicjs.com)
-2. The speed of static HTML
-3. The option to use Markdown files
+1. The flexibility to manage content from the [Cosmic JS CMS API](https://cosmicjs.com).
+2. The speed of static HTML.
+3. The option to use Markdown files.
 
 ###How it Works
 
 1. The build process fetches content from the Cosmic JS API, then builds the static HTML files.
 2. [Metalsmith](http://www.metalsmith.io/) transforms your Markdown into HTML pages.
-3. A light Node.js server is used to serve static files and perform rebuilds at the route `/rebuild-site`
+3. A light Node.js server is used to serve static files and perform rebuilds at the route `/rebuild-site`.
 
 ###Getting Started
 ####Install
