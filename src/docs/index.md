@@ -2,7 +2,7 @@
 title: Documentation
 layout: markdown.html
 ---
-This is documentation page is powered by Markdown.
+This documentation page is powered by Markdown.
 
 Here's a block of code:
 ```bash
