@@ -12,8 +12,8 @@ You get the best of all worlds:
 ###How it Works
 
 1. The build process fetches content from the Cosmic JS API, then builds the static HTML files.
-2. [Metalsmith](http://www.metalsmith.io/) is also thrown in, in case you would like to use markdown to edit your content for certain pages.
-3. It runs a light Node.js server to perform rebuilds at the route `/rebuild-site`
+2. [Metalsmith](http://www.metalsmith.io/) transforms your Markdown into HTML pages.
+3. A light Node.js server is used to serve static files and perform rebuilds at the route `/rebuild-site`
 
 ###Getting Started
 ####Install
