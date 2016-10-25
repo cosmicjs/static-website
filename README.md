@@ -20,7 +20,7 @@ For further reading, check out the article [How to Build an API-Powered, Static 
 ####Install
 Make sure you have yarn installed.  Why?  Because it's new, we love new, and it's provides [quite a few improvements](https://code.facebook.com/posts/1840075619545360) over the old  `npm install`.
 ```
-git clone https://github.com/tonyspiro/static-website
+git clone https://github.com/cosmicjs/static-website
 cd static-website
 yarn
 ```
