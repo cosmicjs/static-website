@@ -17,7 +17,7 @@ You get the best of all worlds:
 
 ###Getting Started
 ####Install
-Make sure you have yarn installed.  Why?  Because it's new, we love new, and it's faster than `npm install`.
+Make sure you have yarn installed.  Why?  Because it's new, we love new, and it's provides [quite a few improvements](https://code.facebook.com/posts/1840075619545360) over the old  `npm install`.
 ```
 git clone https://github.com/tonyspiro/static-website
 cd static-website
