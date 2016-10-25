@@ -38,7 +38,7 @@ You can easily manage the content in your static site on Cosmic JS.  Follow thes
 1. [Log in to Cosmic JS](https://cosmicjs.com).
 2. Create a bucket.
 3. Go to Your Bucket > Apps.
-4. Install the Static Site App.
+4. Install the [Static Site App](https://cosmicjs.com/apps/static-website).
 5. Deploy your Static Site to the Cosmic App Server at Your Bucket > Web Hosting.
 
 Now you can edit your content and rebuild your static site on-the-fly by accessing `http://your-bucket-slug.cosmicapp.co/rebuild-site`.  
