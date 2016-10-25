@@ -27,10 +27,10 @@ yarn
 ```
 yarn start
 ```
-Your static site will now be serving static files from `/build` at http://localhost:3000.
+Your static site will now be serving static files from `/build` at [http://localhost:3000](http://localhost:3000).
 
 ###Easy Rebuilding
-Rebuild the website at any time by accessing `http://localhost:3000/rebuild-site`
+Rebuild the website at any time by accessing [http://localhost:3000/rebuild-site](http://localhost:3000/rebuild-site).
 
 ###Add / Edit Content
 You can easily manage the content in your static site on Cosmic JS.  Follow these steps:
