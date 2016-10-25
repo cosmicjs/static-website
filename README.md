@@ -14,6 +14,8 @@ You get the best of all worlds:
 2. [Metalsmith](http://www.metalsmith.io/) transforms your Markdown into HTML pages.
 3. A light Node.js server is used to serve static files and perform rebuilds at the route `/rebuild-site`.
 
+###Article
+For further reading, check out the article [How to Build an API-Powered, Static Website: The Best of Both Worlds](https://cosmicjs.com/blog/how-to-build-an-api-powered-static-website-the-best-of-both-worlds).
 ###Getting Started
 ####Install
 Make sure you have yarn installed.  Why?  Because it's new, we love new, and it's provides [quite a few improvements](https://code.facebook.com/posts/1840075619545360) over the old  `npm install`.
