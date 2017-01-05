@@ -34,23 +34,21 @@
       <li class="pushy-link">
         <a class="menu-close" href="#">&times;</a>
       </li>
-      {{# cosmic.object.header.metafield.nav_links.children }}
-        {{# children }}
-          <li><a href="{{ value }}">{{ title }}</a></li>
-        {{/ children }}
-      {{/ cosmic.object.header.metafield.nav_links.children }}
+      {{# cosmic.object.header.metadata.nav_links }}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+      {{/ cosmic.object.header.metadata.nav_links }}
     </ul>
     <div class="mb-20 ml-10">
-      {{# cosmic.object.footer.metafield.github.value }}
+      {{# cosmic.object.footer.metadata.github }}
         <a class="mr-10" href="{{ . }}" target="_blank">
           <i class="fa fa-github social-icon"></i>
         </a>
-      {{/ cosmic.object.footer.metafield.github.value }}
-      {{# cosmic.object.footer.metafield.twitter.value }}
+      {{/ cosmic.object.footer.metadata.github }}
+      {{# cosmic.object.footer.metadata.twitter }}
         <a class="mr-10" href="{{ . }}" target="_blank">
           <i class="fa fa-twitter social-icon"></i>
         </a>
-      {{/ cosmic.object.footer.metafield.twitter.value }}
+      {{/ cosmic.object.footer.metadata.twitter }}
     </div>
   </nav>
   <div class="site-overlay"></div>
